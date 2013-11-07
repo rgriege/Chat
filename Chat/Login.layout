@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<GUILayout >
+    <Window Type="DefaultWindow" Name="LoginRoot" >
+        <Property Name="InheritsAlpha" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Window Type="TaharezLook/FrameWindow" Name="Login" >
+            <Property Name="Text" Value="Login Window" />
+            <Property Name="InheritsAlpha" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TitlebarEnabled" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.9,0}}" />
+            <Window Type="TaharezLook/Editbox" Name="Login/Namebox" >
+                <Property Name="Text" Value="Name" />
+                <Property Name="MaxTextLength" Value="1073741823" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,220},{0,200},{1,-220},{0, 230}}" />
+            </Window>
+            <Window Type="TaharezLook/Editbox" Name="Login/Hostbox" >
+                <Property Name="Text" Value="Hostname" />
+                <Property Name="MaxTextLength" Value="1073741823" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,220},{0, 245},{1,-220},{0, 275}}" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="Login/Start" >
+                <Property Name="Text" Value="Start" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,260},{0,290},{1,-260},{0,310}}" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="Login/Quit" >
+                <Property Name="Text" Value="Quit" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,260},{0,320},{1,-260},{0,340}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>
