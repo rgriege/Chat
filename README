@@ -1,0 +1,6 @@
+This version works inside the terminal in linux and uses the same program for host and non-host clients.
+
+Usage:
+
+[-h hostname]: Include to connect to another host or leave to start a server.  The hostname should show at the beginning of the chat when someone starts a chat server.
+[-n name]: Sets the name that will show in the chatroom when you send messages.  The default is 'Stranger.'

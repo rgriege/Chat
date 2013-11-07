@@ -1,0 +1,21 @@
+EXEC := ../bin/ConsoleChat
+SRCS := $(wildcard ../src/*.cpp)
+OBJS := ${SRCS:.cpp=.o}
+INCLUDES := /usr/include/SDL
+LIBS := SDLmain SDL SDL_net GL GLU glut pthread
+
+CXXFLAGS += $(foreach includedir, $(INCLUDES), -I$(includedir))
+LDFLAGS += $(foreach lib, $(LIBS), -l$(lib))
+
+.PHONY: all clean other
+
+all: $(EXEC)
+
+$(EXEC): $(OBJS)
+	$(CXX) $(OBJS) -o $(EXEC) $(LDFLAGS)
+	@echo "Application compiled"
+
+clean:
+	$(RM) $(EXEC)
+	$(RM) *.o 
+	$(RM) *~
